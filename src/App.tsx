@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
+import { Main } from "./views/Main/Main";
+import { Invitation } from "./views/Invitation/Invitation";
 const sectionsColor = [
   "#ff5f45",
   "#0798ec",
@@ -33,18 +35,16 @@ function App() {
         licenseKey={"YOUR_KEY_HERE"} // Get one from https://alvarotrigo.com/fullPage/pricing/
         // navigation
         anchors={["firstPage", "secondPage", "thirdPage"]}
-        // onLeave={this.onLeave.bind(this)}
-        // sectionsColor={sectionsColor}
         render={(comp) => (
           <ReactFullpage.Wrapper>
-            {fullpages.map(({ text }) => (
-              <div key={text} className={'section'}>
-               <p>{text}</p>
+              <div key='index' className='section'>
+                <Main />
               </div>
-            ))}
+              <div key='invitation' className='section'>
+                <Invitation />
+              </div>
           </ReactFullpage.Wrapper>
         )}
-        // credits={{}}
         // //fullpage options
         // licenseKey = {'YOUR_KEY_HERE'}
         // scrollingSpeed = {1000} /* Options here */

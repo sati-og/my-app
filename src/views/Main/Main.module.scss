@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Rubik Maze', cursive;;
+  font-size: 90px;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background-size: cover;
+  height: 700px;
+  width: 600px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: right 50% bottom 0;
+  z-index: 1;
+}
