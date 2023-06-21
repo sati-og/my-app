@@ -1,22 +1,31 @@
 .container {
+  position: relative;
   display: grid;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Rubik Maze', cursive;;
-  font-size: 90px;
-  position: relative;
+  font-family: 'Marck Script', cursive;;
+  font-size: 50px;
+  background-image: linear-gradient(to top left in oklab, hsl(33 23% 58%) 0%, hsl(33 23% 66% / 61%) 100%);
 }
 
 .content {
-  display: flex;
-  align-items: center;
+  position: relative;
   padding: 50px;
   background-size: cover;
-  height: 700px;
-  width: 600px;
+  height: 800px;
+  width: 563px;
   background-color: #ffffff;
+  box-shadow: 16px 16px 13px 5px rgba(34, 60, 80, 0.2);
   z-index: 2;
+}
+
+.contentInfo {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  right: 0;
+  bottom: 0;
 }
 
 .backdrop {
@@ -25,4 +34,28 @@
   background-size: cover;
   background-position: right 50% bottom 0;
   z-index: 1;
+}
+
+.flowersLeftImage {
+  position: absolute;
+  height: 800px;
+  width: 563px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.name {
+  //text-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  color: #5b5b5b;
+}
+
+.shadowOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

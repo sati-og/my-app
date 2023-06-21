@@ -4,14 +4,19 @@ export const Main = () => {
   return (
     <div className={s.container}>
       <div
-        style={{ backgroundImage: 'url("/images/backdrop.svg")' }}
+        // style={{ backgroundImage: 'url("/images/backdrop.svg")' }}
         className={s.backdrop}
       />
       <div
         className={s.content}
       >
-        Александр Сатеник
+        <img className={s.flowersLeftImage} src="/images/flowersLeft.svg" alt=""/>
+        <div className={s.contentInfo}>
+          <span className={s.name}>Александр Сатеник</span>
+        </div>
+
       </div>
+      <img className={s.shadowOverlay} src="/images/leafs-shadow.png" alt=""/>
     </div>
   )
 }
