@@ -4,28 +4,8 @@ import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { Main } from "./views/Main/Main";
 import { Invitation } from "./views/Invitation/Invitation";
-const sectionsColor = [
-  "#ff5f45",
-  "#0798ec",
-  "#fc6c7c",
-  "#435b71",
-  "orange",
-  "blue",
-  "purple",
-  "yellow"
-]
-
-const fullpages= [
-  {
-    text: "Section 1"
-  },
-  {
-    text: "Section 2"
-  },
-  {
-    text: "Section 3"
-  }
-]
+import {Schedule} from "./views/Schedule/Schedule";
+import {Wishes} from "./views/Wishes/Wishes";
 
 function App() {
   return (
@@ -34,8 +14,8 @@ function App() {
         credits={{}}
         licenseKey={"YOUR_KEY_HERE"} // Get one from https://alvarotrigo.com/fullPage/pricing/
         // navigation
-        anchors={["firstPage", "secondPage", "thirdPage"]}
-        render={(comp) => (
+        anchors={["firstPage", "secondPage", "thirdPage", "wishesPage"]}
+        render={() => (
           <ReactFullpage.Wrapper>
               <div key='index' className='section'>
                 <Main />
@@ -43,6 +23,12 @@ function App() {
               <div key='invitation' className='section'>
                 <Invitation />
               </div>
+            <div key='schedule' className='section'>
+              <Schedule />
+            </div>
+            <div key='wishes' className='section'>
+              <Wishes />
+            </div>
           </ReactFullpage.Wrapper>
         )}
         // //fullpage options

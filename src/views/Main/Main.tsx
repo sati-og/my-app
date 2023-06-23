@@ -10,11 +10,20 @@ export const Main = () => {
       <div
         className={s.content}
       >
-        <img className={s.flowersLeftImage} src="/images/flowersLeft.svg" alt=""/>
+        <img className={s.flowersLeftImage} src="/images/flowersLeft3.svg" alt=""/>
         <div className={s.contentInfo}>
-          <span className={s.name}>Александр Сатеник</span>
+          <span className={s.name}>Александр</span>
+          <span className={s.name}>Сатеник</span>
         </div>
-
+        <div className={s.dateText}>
+          <span>12 августа 2023</span>
+        </div>
+        {/*<div className={s.contentInfo}>*/}
+        {/*  <span className={s.name}>Александр Сатеник</span>*/}
+        {/*</div>*/}
+        {/*<div className={s.contentInfo}>*/}
+        {/*  <span className={s.name}>12 августа 2023</span>*/}
+        {/*</div>*/}
       </div>
       <img className={s.shadowOverlay} src="/images/leafs-shadow.png" alt=""/>
     </div>

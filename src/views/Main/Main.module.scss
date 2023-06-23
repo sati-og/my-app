@@ -21,11 +21,24 @@
 }
 
 .contentInfo {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  right: 0;
-  bottom: 0;
+  //position: absolute;
+  //width: 50%;
+  //height: 50%;
+  //right: 0;
+  //bottom: 0;
+  margin-top: 91%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 73px;
+}
+
+.dateText {
+  text-align: right;
+  font-size: 36px;
+  color: #5b5b5b;
+  letter-spacing: 4px;
+  margin-top: 60px;
 }
 
 .backdrop {
@@ -44,6 +57,7 @@
   top: 0;
   bottom: 0;
   object-fit: cover;
+  z-index: -1;
 }
 
 .name {
