@@ -20,22 +20,6 @@
   z-index: 2;
 }
 
-.contentInfo {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  right: 0;
-  bottom: 0;
-}
-
-.backdrop {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: right 50% bottom 0;
-  z-index: 1;
-}
-
 .flowersLeftImage {
   position: absolute;
   height: 800px;
@@ -47,11 +31,6 @@
   z-index: -1;
 }
 
-.name {
-  //text-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
-  color: #5b5b5b;
-}
-
 .shadowOverlay {
   position: absolute;
   inset: 0;
@@ -61,23 +40,68 @@
   width: 100%;
 }
 
-.nameText {
-  margin-top: 226px;
-  font-size: 45px;
-  color: #5b5b5b;
-
-}
-
 .text {
   margin-top: 29px;
   font-size: 25px;
   color: #5b5b5b;
-
+  display: grid;
+  grid-template-columns: 158px 55px 1fr;
+  gap: 10px;
+  text-align: left;
 }
 
-.dateText {
-  margin-top: 20px;
-  font-size: 45px;
+.title{
+  margin-top: 130px;
+  font-size: 50px;
   color: #5b5b5b;
+}
 
+
+@media screen and (max-width: 563px) {
+  .content {
+      height: 651px;
+      width: 414px;
+      padding: 35px;
+  }
+
+  .flowersLeftImage {
+      height: 651px;
+      width: 414px;
+  }
+
+  .text {
+    margin-top: 20px;
+    font-size: 21px;
+    grid-template-columns: 130px 39px 1fr;
+  }
+
+  .title{
+    margin-top: 96px;
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+
+  .content {
+    height: 587px;
+      width: 350px;
+    padding: 25px;
+  }
+
+  .flowersLeftImage {
+     height: 587px;
+      width: 350px;
+  }
+
+  .text {
+    margin-top: 25px;
+    font-size: 18px;
+    grid-template-columns: 113px 34px 1fr;
+  }
+
+  .title{
+    margin-top: 96px;
+    font-size: 42px;
+  }
 }

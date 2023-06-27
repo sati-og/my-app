@@ -4,15 +4,11 @@ export const Schedule = () => {
   return (
     <div className={s.container}>
       <div
-        // style={{ backgroundImage: 'url("/images/backdrop.svg")' }}
-        className={s.backdrop}
-      />
-      <div
         className={s.content}
       >
         <img className={s.flowersLeftImage} src="/images/flowersRight2.svg" alt=""/>
         <div className={s.title}>
-          <span>Расписание свадебного дня</span>
+          <span>Программа</span>
         </div>
         {/*<div className={s.text}>*/}
         {/*  <span>Утро невесты</span>*/}

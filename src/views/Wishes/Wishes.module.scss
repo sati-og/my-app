@@ -19,23 +19,6 @@
   box-shadow: 16px 16px 13px 5px rgba(34, 60, 80, 0.2);
   z-index: 2;
 }
-
-.contentInfo {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  right: 0;
-  bottom: 0;
-}
-
-.backdrop {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: right 50% bottom 0;
-  z-index: 1;
-}
-
 .flowersLeftImage {
   position: absolute;
   height: 800px;
@@ -44,12 +27,9 @@
   top: 0;
   bottom: 0;
   object-fit: cover;
+  transform: rotate(180deg);
 }
 
-.name {
-  //text-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
-  color: #5b5b5b;
-}
 
 .shadowOverlay {
   position: absolute;
@@ -78,5 +58,55 @@
   margin-top: 20px;
   font-size: 45px;
   color: #5b5b5b;
+}
 
+.title{
+  font-size: 50px;
+  color: #5b5b5b;
+}
+
+@media screen and (max-width: 563px) {
+  .content {
+    height: 651px;
+    width: 414px;
+    padding: 35px;
+  }
+
+  .flowersLeftImage {
+    height: 651px;
+    width: 414px;
+  }
+
+  .text {
+    margin-top: 20px;
+    font-size: 21px;
+    grid-template-columns: 130px 39px 1fr;
+  }
+
+  .title{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+
+  .content {
+    height: 587px;
+    width: 350px;
+    padding: 25px;
+  }
+
+  .flowersLeftImage {
+    height: 587px;
+    width: 350px;
+  }
+
+  .text {
+    margin-top: 25px;
+    font-size: 18px;
+  }
+
+  .title{
+    font-size: 42px;
+  }
 }

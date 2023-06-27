@@ -11,7 +11,7 @@ export const Wishes = () => {
       >
         <img className={s.flowersLeftImage} src="/images/flowersTop.svg" alt=""/>
         <div className={s.title}>
-          <span>Расписание свадебного дня</span>
+          <span>Пожелания</span>
         </div>
         <div className={s.text}>
           <span>Пожалуйста, подтвердите ваше присутствие на нашем празднике до  01 августа 2023 года любым удобным для вас способом.</span>
