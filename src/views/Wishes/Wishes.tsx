@@ -4,9 +4,6 @@ export const Wishes = () => {
   return (
     <div className={s.container}>
       <div
-        className={s.backdrop}
-      />
-      <div
         className={s.content}
       >
         <img className={s.flowersLeftImage} src="/images/flowersTop.svg" alt=""/>
