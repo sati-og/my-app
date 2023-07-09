@@ -1,6 +1,7 @@
 import s from './Invitation.module.scss';
 import { guestList } from "./guestList";
 import { declOfNum } from "../../utils";
+import { useParams } from "react-router-dom";
 
 const setName = (nameId: number): string => {
   const nameObj = guestList.find(el=> el.id === nameId)
@@ -18,6 +19,10 @@ const setName = (nameId: number): string => {
 
 export const Invitation = () => {
 
+  const { id } = useParams<{ id: string }>();
+
+  console.log("@@@@id", id);
+  
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const firstDate = new Date(2023, 7, 12).getTime();
   const secondDate = new Date().getTime();
@@ -33,10 +38,11 @@ export const Invitation = () => {
             <span>{setName(25)}</span>
           </div>
           <div className={s.text}>
-            <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи. Приглашаем вас разделить с нами радость особенного дня.<br /> Дня нашей свадьбы. </span>
+            <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи. Приглашаем вас разделить с нами радость особенного дня.</span>
+            <span style={{display: 'inline-block',  marginTop: 25 }}>Дня нашей свадьбы.</span>
           </div>
           <div className={s.dateText}>
-            <span>До свадьбы {diffDays} {declOfNum(diffDays, ['день', 'дня', 'дней'])}</span>
+            <span>Осталось {diffDays} {declOfNum(diffDays, ['день', 'дня', 'дней'])}</span>
           </div>
         </div>
       </div>

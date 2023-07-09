@@ -8,7 +8,7 @@
   border-radius: 10px;
   height: 150px;
   width: 150px;
-  animation: 1s cubic-bezier(.26,-0.53,.57,2.32) 3s infinite alternate pump, 1s cubic-bezier(0.53, 0, 0.72, 0.72) 9s 1 forwards hideHeart;
+  animation: 1s cubic-bezier(.26,-0.53,.57,2.32) 3s infinite alternate pump, 1s cubic-bezier(0.53, 0, 0.72, 0.72) 7s 1 forwards hideHeart;
 }
 
 .rhombus2:before {
@@ -53,7 +53,7 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-  animation: 1s cubic-bezier(0.53, 0, 0.72, 0.72) 9s 1 forwards hideBackdrop;
+  animation: 1s cubic-bezier(0.53, 0, 0.72, 0.72) 8s 1 forwards hideBackdrop;
 }
 
 .wrapper {
@@ -61,30 +61,31 @@
   animation: 1s ease-out 0s 1 forwards reveal;
 }
 
+.text {
+  color: #5b5b5b;
+  font-size: 38px;
+  position: absolute;
+  overflow: hidden;
+  word-break: keep-all;
+  top: 50%;
+  z-index: 1;
+  font-family: 'Marck Script', cursive;
+}
+
 .textLeft {
   transform: translateX(0);
   width: 0;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  animation: 2s ease-in-out 1s 1 forwards revealLeft, 1s ease-in 7s 1 forwards hideLeft;
-  overflow: hidden;
-  word-break: keep-all;
-  z-index: 1;
+  animation: 2s ease-in-out 1s 1 forwards revealLeft, .75s ease-in 6s 1 forwards hideLeft;
+  text-align: left;
 }
 
 .textRight {
   transform: translateX(-20px);
-  width: 112px;
+  width: 0;
   right: 0;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  animation: 2s ease-in-out 1s 1 forwards revealRight, 1s ease-in 7s 1 forwards hideRight;
-  overflow: hidden;
-  word-break: keep-all;
+  animation: 2s ease-in-out 1s 1 forwards revealRight, 0.75s ease-in 6s 1 forwards hideRight;
   text-align: right;
-  z-index: 1;
+  direction: rtl;
 }
 
 @keyframes hideHeart {
@@ -115,54 +116,54 @@
 
 
 @keyframes pump {
-  0%{
+  0% {
     transform: scale(1);
   }
 
-  100%{
+  100% {
     transform: scale(1.1);
   }
 }
 
 @keyframes revealLeft {
-  0%{
-    transform: translateX(0);
+  0% {
+    transform: translateX(20px);
     width: 0;
   }
 
-  100%{
-    transform: translateX(-170px);
-    width: 170px;
+  100% {
+    transform: translateX(-200px);
+    width: 220px;
   }
 }
 
 @keyframes revealRight {
-  0%{
+  0% {
     display: block;
     transform: translateX(-20px);
   }
 
-  100%{
-    transform: translateX(112px);
+  100% {
+    transform: translateX(155px);
+    width: 165px;
   }
 }
 
 @keyframes hideLeft {
-  0%{
-    transform: translateX(-170px);
-    width: 170px;
-
+  0% {
+    transform: translateX(-200px);
+    width: 220px;
   }
 
-  100%{
-    transform: translateX(0);
+  100% {
+    transform: translateX(20px);
     width: 0;
   }
 }
 
 @keyframes hideRight {
   0% {
-    transform: translateX(112px);
+    transform: translateX(155px);
     opacity: 1;
   }
 

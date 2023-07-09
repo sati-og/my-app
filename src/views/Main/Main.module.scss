@@ -28,14 +28,6 @@
   font-size: 73px;
 }
 
-.dateText {
-  text-align: right;
-  font-size: 36px;
-  color: #5b5b5b;
-  letter-spacing: 4px;
-  margin-top: 60px;
-}
-
 .backdrop {
   position: absolute;
   inset: 0;
@@ -53,23 +45,26 @@
   bottom: 0;
   object-fit: cover;
   z-index: -1;
-  animation-name: revealImage;
+  animation-name: reveal;
   animation-duration: 5s;
-  animation-delay: 9s;
+  animation-delay: 8s;
   overflow: hidden;
 }
 
-@keyframes revealImage {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.name {
+  opacity: 0;
+  color: #5b5b5b;
+  animation: 1.5s ease-out 9s 1 forwards reveal;
 }
 
-.name {
+.dateText {
+  opacity: 0;
+  text-align: right;
+  font-size: 36px;
   color: #5b5b5b;
+  letter-spacing: 4px;
+  margin-top: 60px;
+  animation: 1.5s ease-out 10s 1 forwards reveal;
 }
 
 .shadowOverlay {
@@ -124,5 +119,14 @@
   .dateText{
     font-size: 30px;
     margin-top: 60px;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

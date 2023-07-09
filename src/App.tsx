@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
+import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { Main } from "./views/Main/Main";
 import { Invitation } from "./views/Invitation/Invitation";
-import {Schedule} from "./views/Schedule/Schedule";
-import {Wishes} from "./views/Wishes/Wishes";
+import { Schedule } from "./views/Schedule/Schedule";
+import { Wishes } from "./views/Wishes/Wishes";
 import { HeartLoader } from "./components/HeartLoader";
 import s from "./views/Main/Main.module.scss";
+import './App.css';
 
 function App() {
 

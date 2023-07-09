@@ -10,9 +10,8 @@ export const HeartLoader = () => {
             <div className={s.circle22}></div>
           </div>
         </div>
-
-        <div className={s.textLeft}>Александр</div>
-        <div className={s.textRight}>Сатеник</div>
+        <div className={`${s.text} ${s.textLeft}`}>Александр</div>
+        <div className={`${s.text} ${s.textRight}`}>Сатеник</div>
       </div>
     </div>
   )
