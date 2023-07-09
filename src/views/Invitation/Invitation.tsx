@@ -27,7 +27,7 @@ export const Invitation = () => {
   return (
     <div className={s.container}>
       <div className={s.content}>
-        <img className={s.flowersTopImage} src="/images/flowersTop.svg" alt=""/>
+        <img className={s.flowersTopImage} src="/images/flowersTop7.svg" alt=""/>
         <div className={s.invitationContent}>
           <div className={s.nameText}>
             <span>{setName(25)}</span>

@@ -26,11 +26,11 @@
   height: 800px;
   width: 563px;
   left: 0;
-  top: 22px;
   bottom: 0;
   object-fit: cover;
   transform: rotate(180deg);
   pointer-events: none;
+  z-index: -1;
 }
 
 
