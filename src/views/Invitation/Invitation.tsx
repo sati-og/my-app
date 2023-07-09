@@ -1,5 +1,6 @@
 import s from './Invitation.module.scss';
 import { guestList } from "./guestList";
+import { declOfNum } from "../../utils";
 
 const setName = (nameId: number): string => {
   const nameObj = guestList.find(el=> el.id === nameId)
@@ -25,23 +26,20 @@ export const Invitation = () => {
 
   return (
     <div className={s.container}>
-      <div
-        className={s.content}
-      >
-
-        <img className={s.flowersLeftImage} src="/images/flowersTop.svg" alt=""/>
-        <div className={s.nameText}>
-          <span>{setName(25)}</span>
-        </div>
-        <div className={s.text}>
-
-          <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи. Приглашаем вас разделить с нами радость оссобенного дня - дня нашей свадьбы. </span>
-        </div>
-        <div className={s.dateText}>
-          <span>До свадьбы {diffDays} дней</span>
+      <div className={s.content}>
+        <img className={s.flowersTopImage} src="/images/flowersTop.svg" alt=""/>
+        <div className={s.invitationContent}>
+          <div className={s.nameText}>
+            <span>{setName(25)}</span>
+          </div>
+          <div className={s.text}>
+            <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи. Приглашаем вас разделить с нами радость особенного дня.<br /> Дня нашей свадьбы. </span>
+          </div>
+          <div className={s.dateText}>
+            <span>До свадьбы {diffDays} {declOfNum(diffDays, ['день', 'дня', 'дней'])}</span>
+          </div>
         </div>
       </div>
-      <img className={s.shadowOverlay} src="/images/leafs-shadow.png" alt=""/>
     </div>
   )
 }

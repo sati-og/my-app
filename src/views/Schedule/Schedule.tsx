@@ -6,7 +6,7 @@ export const Schedule = () => {
       <div
         className={s.content}
       >
-        <img className={s.flowersLeftImage} src="/images/flowersRight2.svg" alt=""/>
+        <img className={s.flowersTopImage} src="/images/flowersRight2.svg" alt=""/>
         <div className={s.title}>
           <span>Программа</span>
         </div>
@@ -41,7 +41,7 @@ export const Schedule = () => {
           <span>ул. Ефремова 187 Ресторан "Крокус"</span>
         </div>
       </div>
-      <img className={s.shadowOverlay} src="/images/leafs-shadow.png" alt=""/>
+      {/*<img className={s.shadowOverlay} src="/images/leafs-shadow.png" alt=""/>*/}
     </div>
   )
 }

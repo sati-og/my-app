@@ -11,19 +11,21 @@
 
 .content {
   position: relative;
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
   background-size: cover;
   height: 800px;
   width: 563px;
   background-color: #ffffff;
   box-shadow: 16px 16px 13px 5px rgba(34, 60, 80, 0.2);
+  overflow: hidden;
   z-index: 2;
+
   @media screen and (max-width: 563px) {
     height: 651px;
     width: 414px;
     padding: 35px;
-
   }
+
   @media screen and (max-width: 414px) {
     height: 587px;
     width: 350px;
@@ -31,23 +33,23 @@
   }
 }
 
-.flowersLeftImage {
+.flowersTopImage {
   position: absolute;
   width: 563px;
   left: 0;
-  top: 0;
+  top: -7px;
   bottom: 0;
   object-fit: cover;
   z-index: -1;
+
   @media screen and (max-width: 563px) {
     width: 414px;
   }
+
   @media screen and (max-width: 414px) {
-  width: 350px;
+    width: 350px;
+  }
 }
-}
-
-
 
 .shadowOverlay {
   position: absolute;
@@ -58,10 +60,18 @@
   width: 100%;
 }
 
+.invitationContent {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
 .nameText {
-  margin-top: 226px;
+  margin-top: 208px;
   font-size: 45px;
   color: #5b5b5b;
+
   @media screen and (max-width: 563px) {
     font-size: 34px;
     margin-top: 159px;
@@ -73,9 +83,11 @@
 }
 
 .text {
-  margin-top: 29px;
-  font-size: 32px;
+  font-size: 30px;
+  line-height: 45px;
   color: #5b5b5b;
+  text-align: justify;
+
   @media screen and (max-width: 563px) {
     font-size: 26px;
     margin-top: 23px;
@@ -87,9 +99,10 @@
 }
 
 .dateText {
-  margin-top: 20px;
   font-size: 45px;
   color: #5b5b5b;
+  text-align: end;
+
   @media screen and (max-width: 563px) {
     font-size: 34px;
   }
