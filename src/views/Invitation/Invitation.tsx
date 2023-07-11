@@ -35,7 +35,7 @@ export const Invitation = () => {
         <img className={s.flowersTopImage} src="/images/flowersTop7.svg" alt=""/>
         <div className={s.invitationContent}>
           <div className={s.nameText}>
-            <span>{setName(25)}</span>
+            <span>{setName(+(id || 0))}</span>
           </div>
           <div className={s.text}>
             <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи. Приглашаем вас разделить с нами радость особенного дня.</span>

@@ -7,6 +7,7 @@ import { Wishes } from "./views/Wishes/Wishes";
 import { HeartLoader } from "./components/HeartLoader";
 import s from "./views/Main/Main.module.scss";
 import './App.css';
+import {Thank} from "./views/Thank/Thank";
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
             </div>
             <div key='wishes' className='section'>
               <Wishes />
+            </div>
+            <div key='thank' className='section'>
+              <Thank />
             </div>
           </ReactFullpage.Wrapper>
         )}

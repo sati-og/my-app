@@ -6,29 +6,14 @@ export const Schedule = () => {
       <div
         className={s.content}
       >
-        <img className={s.flowersTopImage} src="/images/flowersRight2.svg" alt=""/>
+        <img className={s.flowersTopImage} src="/images/flowersRight5.svg" alt=""/>
         <div className={s.title}>
           <span>Программа</span>
         </div>
-        {/*<div className={s.text}>*/}
-        {/*  <span>Утро невесты</span>*/}
-        {/*  <span>Регистрация брака</span>*/}
-        {/*  <span>Банкет</span>*/}
-        {/*</div>*/}
-        {/*<div className={s.text}>*/}
-        {/*  <span>12:00</span>*/}
-        {/*  <span>16:00</span>*/}
-        {/*  <span>18:00</span>*/}
-        {/*</div>*/}
-        {/*<div className={s.text}>*/}
-        {/*  <span>2я Урицкого 88</span>*/}
-        {/*  <span>территория ресторана "Белуга" ул.Тенистая 30</span>*/}
-        {/*  <span>Ресторан "Крокус" ул. Ефремова 187</span>*/}
-        {/*</div>*/}
         <div className={s.text}>
           <span>Утро невесты</span>
           <span>12:00</span>
-          <span>2я Урицкого 88</span>
+          <span>ул. Майкопская 273</span>
         </div>
         <div className={s.text}>
           <span>Регистрация</span>
@@ -40,8 +25,10 @@ export const Schedule = () => {
           <span>18:00</span>
           <span>ул. Ефремова 187 Ресторан "Крокус"</span>
         </div>
+        <div className={s.additionalText}>
+          <span>*Если Вы придете раньше основной программы, будем рады видеть вас по адресу: улица 2я Урицкого, 88.</span>
+        </div>
       </div>
-      {/*<img className={s.shadowOverlay} src="/images/leafs-shadow.png" alt=""/>*/}
     </div>
   )
 }
