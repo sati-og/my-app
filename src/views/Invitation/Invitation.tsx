@@ -3,7 +3,7 @@ import { guestList } from "./guestList";
 import { declOfNum } from "../../utils";
 import { useParams } from "react-router-dom";
 
-const setName = (nameId: number): string => {
+const setName = (nameId: string): string => {
   const nameObj = guestList.find(el=> el.id === nameId)
   if(nameObj) {
     switch (nameObj.type) {
@@ -35,13 +35,16 @@ export const Invitation = () => {
         <img className={s.flowersTopImage} src="/images/flowersTop7.svg" alt=""/>
         <div className={s.invitationContent}>
           <div className={s.nameText}>
-            <span>{setName(+(id || 0))}</span>
+            <span>{setName(id || 'guest')}</span>
           </div>
           <div className={s.text}>
-            <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи. Приглашаем вас разделить с нами радость особенного дня.</span>
-            <span style={{display: 'inline-block',  marginTop: 25 }}>Дня нашей свадьбы.</span>
+            <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи.</span>
+            <span className={s.secondText}>Приглашаем вас разделить с нами радость особенного дня — дня нашей свадьбы.</span>
           </div>
           <div className={s.dateText}>
+            12 августа 2023
+           </div>
+          <div className={s.dayText}>
             <span>Осталось {diffDays} {declOfNum(diffDays, ['день', 'дня', 'дней'])}</span>
           </div>
         </div>

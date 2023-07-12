@@ -8,6 +8,7 @@ import { HeartLoader } from "./components/HeartLoader";
 import s from "./views/Main/Main.module.scss";
 import './App.css';
 import {Thank} from "./views/Thank/Thank";
+import {Setting} from "./views/Setting/Setting";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
             <div key='wishes' className='section'>
               <Wishes />
             </div>
+            <div  key='setting' className='section'><Setting/></div>
             <div key='thank' className='section'>
               <Thank />
             </div>

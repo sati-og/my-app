@@ -77,20 +77,6 @@
   }
 }
 
-.nameText {
-  margin-top: 208px;
-  font-size: 45px;
-  color: #5b5b5b;
-
-  @media screen and (max-width: 563px) {
-    font-size: 34px;
-    margin-top: 159px;
-  }
-  @media screen and (max-width: 414px) {
-    font-size: 30px;
-    margin-top: 147px;
-  }
-}
 
 .text {
   font-size: 30px;
@@ -108,41 +94,20 @@
   }
 }
 
-.secondText {
-  display: inline-block;
-  margin-top: 25px;
+
+
+.settingImg {
+  width: 463px;
+  object-fit: cover;
+
   @media screen and (max-width: 563px) {
-    margin-top: 21px;
+    width: 414px;
   }
+
   @media screen and (max-width: 414px) {
-    margin-top: 19px;
+    width: 350px;
 
   }
 }
 
-.dateText {
-  font-size: 30px;
-  line-height: 40px;
-  color: #5b5b5b;
-  text-align: end;
 
-  @media screen and (max-width: 563px) {
-    font-size: 26px;
-  }
-  @media screen and (max-width: 414px) {
-    font-size: 24px;
-  }
-}
-
-.dayText {
-  font-size: 45px;
-  color: #5b5b5b;
-  text-align: end;
-
-  @media screen and (max-width: 563px) {
-    font-size: 34px;
-  }
-  @media screen and (max-width: 414px) {
-    font-size: 30px;
-  }
-}

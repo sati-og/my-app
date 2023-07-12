@@ -45,7 +45,7 @@
   font-size: 25px;
   color: #5b5b5b;
   display: grid;
-  grid-template-columns: 158px 55px 1fr;
+  grid-template-columns: 158px 80px 1fr;
   gap: 10px;
   text-align: left;
 }
@@ -54,13 +54,21 @@
   margin-top: 29px;
   font-size: 25px;
   color: #5b5b5b;
-  text-align: left;
+  text-align: end;
 }
 
 .title{
-  margin-top: 130px;
+  margin-top: 60px;
   font-size: 50px;
   color: #5b5b5b;
+}
+
+.address {
+  text-align: right;
+}
+
+.time {
+  text-align: center;
 }
 
 
@@ -83,8 +91,13 @@
   }
 
   .title{
-    margin-top: 96px;
+    margin-top: 47px;
     font-size: 45px;
+  }
+
+  .additionalText{
+    margin-top: 20px;
+    font-size: 21px;
   }
 }
 
@@ -92,23 +105,28 @@
 
   .content {
     height: 587px;
-      width: 350px;
+    width: 350px;
     padding: 25px;
   }
 
   .flowersTopImage {
-     height: 587px;
-      width: 350px;
+    height: 587px;
+    width: 350px;
   }
 
   .text {
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 18px;
     grid-template-columns: 113px 34px 1fr;
   }
 
   .title{
-    margin-top: 96px;
+    margin-top: 47px;
     font-size: 42px;
+  }
+
+  .additionalText{
+    margin-top: 20px;
+    font-size: 18px;
   }
 }
