@@ -6,7 +6,7 @@ export const Schedule = () => {
       <div
         className={s.content}
       >
-        <img className={s.flowersTopImage} src="/images/flowersRight5.svg" alt=""/>
+        <img className={s.flowersTopImage} src="/images/flowersRight5.jpg" alt=""/>
         <div className={s.title}>
           <span>Программа</span>
         </div>

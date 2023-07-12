@@ -4,7 +4,7 @@ export const Main = () => {
   return (
     <div className={s.container}>
       <div className={s.content}>
-        <img className={s.flowersLeftImage} src="/images/flowersLeft3.svg" alt=""/>
+        <img className={s.flowersLeftImage} src="/images/flowersLeft3.jpg" alt=""/>
         <div className={s.contentInfo}>
           <span className={s.name}>Александр</span>
           <span className={s.name}>Сатеник</span>

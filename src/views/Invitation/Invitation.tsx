@@ -30,7 +30,7 @@ export const Invitation = () => {
   return (
     <div className={s.container}>
       <div className={s.content}>
-        <img className={s.flowersTopImage} src="/images/flowersTop10.svg" alt=""/>
+        <img className={s.flowersTopImage} src="/images/flowersTop7.jpg" alt=""/>
         <div className={s.invitationContent}>
           <div className={s.nameText}>
             <span>{setName(id || 'guest')}</span>
