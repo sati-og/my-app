@@ -14,15 +14,13 @@ const setName = (nameId: string): string => {
       default: return nameObj.nameStr
     }
   }
-  return ''
+  return guestList.find(el=> el.id === 'guest')?.nameStr || ''
 }
 
 export const Invitation = () => {
 
   const { id } = useParams<{ id: string }>();
 
-  console.log("@@@@id", id);
-  
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const firstDate = new Date(2023, 7, 12).getTime();
   const secondDate = new Date().getTime();
@@ -32,7 +30,7 @@ export const Invitation = () => {
   return (
     <div className={s.container}>
       <div className={s.content}>
-        <img className={s.flowersTopImage} src="/images/flowersTop7.svg" alt=""/>
+        <img className={s.flowersTopImage} src="/images/flowersTop10.svg" alt=""/>
         <div className={s.invitationContent}>
           <div className={s.nameText}>
             <span>{setName(id || 'guest')}</span>
