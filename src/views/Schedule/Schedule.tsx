@@ -17,7 +17,7 @@ export const Schedule = () => {
         </div>
         <div className={s.text}>
           <span>Утро невесты</span>
-          <span className={s.time}>12:00</span>
+          <span className={s.time}>12:30</span>
           <span className={s.address}>ул. Майкопская 273</span>
         </div>
         <div className={s.text}>
