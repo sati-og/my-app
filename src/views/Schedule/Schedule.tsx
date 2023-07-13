@@ -11,6 +11,11 @@ export const Schedule = () => {
           <span>Программа</span>
         </div>
         <div className={s.text}>
+          <span>Сборы жениха</span>
+          <span className={s.time}>12:00</span>
+          <span className={s.address}>ул. Мира 20А "Royal Hotel Riz"</span>
+        </div>
+        <div className={s.text}>
           <span>Утро невесты</span>
           <span className={s.time}>12:00</span>
           <span className={s.address}>ул. Майкопская 273</span>

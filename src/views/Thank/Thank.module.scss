@@ -20,22 +20,6 @@
   z-index: 2;
 }
 
-.contentInfo {
-  margin-top: 91%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-size: 73px;
-}
-
-.backdrop {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: right 50% bottom 0;
-  z-index: 1;
-}
-
 .flowersLeftImage {
   position: absolute;
   height: 800px;
@@ -51,29 +35,29 @@
   overflow: hidden;
 }
 
-.name {
-  opacity: 0;
+.textA {
   color: #5b5b5b;
-  animation: 1.5s ease-out 9s 1 forwards reveal;
-}
-
-.dateText {
-  opacity: 0;
-  text-align: right;
-  font-size: 36px;
-  color: #5b5b5b;
-  letter-spacing: 4px;
-  margin-top: 60px;
-  animation: 1.5s ease-out 10s 1 forwards reveal;
-}
-
-.shadowOverlay {
+  font-size: 142px;
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+  top: 38%;
+  left: 38%;
+}
+
+.textAnd {
+  opacity: 0.2;
+  color: #5b5b5b;
+  position: absolute;
+  font-size: 367px;
+  top: 26%;
+  left: 36%;
+}
+
+.textC {
+  color: #5b5b5b;
+  font-size: 150px;
+  position: absolute;
+  top: 50%;
+  left: 52%;
 }
 
 @media screen and (max-width: 563px) {
@@ -88,15 +72,6 @@
     width: 414px;
   }
 
-  .contentInfo {
-    margin-top: 103%;
-    font-size: 56px;
-  }
-
-  .dateText{
-    font-size: 33px;
-    margin-top: 58px;
-  }
 }
 
 @media screen and (max-width: 414px) {
@@ -111,22 +86,6 @@
     width: 350px;
   }
 
-  .contentInfo {
-    margin-top: 107%;
-    font-size: 51px;
-  }
 
-  .dateText{
-    font-size: 30px;
-    margin-top: 60px;
-  }
 }
 
-@keyframes reveal {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
