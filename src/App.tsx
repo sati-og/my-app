@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactFullpage from '@fullpage/react-fullpage';
+// import ReactFullpage from '@fullpage/react-fullpage';
+import  PageScroll  from  'react-page-scroll';
 import { Main } from "./views/Main/Main";
 import { Invitation } from "./views/Invitation/Invitation";
 import { Schedule } from "./views/Schedule/Schedule";
@@ -16,30 +17,26 @@ function App() {
     <div className="App">
       <HeartLoader />
       <img className={s.shadowOverlay} src="/images/leafs-shadow.png" alt=""/>
-      <ReactFullpage
-        credits={{}}
-        licenseKey={"YOUR_KEY_HERE"} // Get one from https://alvarotrigo.com/fullPage/pricing/
-        render={() => (
-          <ReactFullpage.Wrapper>
-            <div key='index' className='section'>
-              <Main />
-            </div>
-            <div key='invitation' className='section'>
-              <Invitation />
-            </div>
-            <div key='schedule' className='section'>
-              <Schedule />
-            </div>
-            <div key='wishes' className='section'>
-              <Wishes />
-            </div>
-            <div  key='setting' className='section'><Setting/></div>
-            <div key='thank' className='section'>
-              <Thank />
-            </div>
-          </ReactFullpage.Wrapper>
-        )}
-      />
+      <PageScroll width="100vw" height="100vh">
+        <div key='index' className='page'>
+          <Main />
+        </div>
+        <div key='invitation' className='page'>
+          <Invitation />
+        </div>
+        <div key='schedule' className='page'>
+          <Schedule />
+        </div>
+        <div key='wishes' className='page'>
+          <Wishes />
+        </div>
+        <div  key='setting' className='page'>
+          <Setting/>
+        </div>
+        <div key='thank' className='page'>
+          <Thank />
+        </div>
+      </PageScroll>
     </div>
   );
 }
