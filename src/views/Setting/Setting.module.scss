@@ -21,13 +21,13 @@
   z-index: 2;
 
   @media screen and (max-width: 563px) {
-    height: 651px;
+    height: 588px;
     width: 414px;
     padding: 35px;
   }
 
   @media screen and (max-width: 414px) {
-    height: 587px;
+    height: 497px;
     width: 350px;
     padding: 25px;
   }
@@ -43,12 +43,12 @@
 
   @media screen and (max-width: 563px) {
     width: 414px;
-    height: 651px;
+    height: 588px;
   }
 
   @media screen and (max-width: 414px) {
     width: 350px;
-    height: 587px;
+    height: 497px;
 
   }
 }
@@ -85,12 +85,12 @@
   text-align: justify;
 
   @media screen and (max-width: 563px) {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 32px;
   }
   @media screen and (max-width: 414px) {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 26px;
+    line-height: 38px;
   }
 }
 

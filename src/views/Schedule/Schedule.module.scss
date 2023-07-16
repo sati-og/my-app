@@ -15,8 +15,6 @@
   background-size: cover;
   height: 800px;
   width: 563px;
-  background-color: #ffffff;
-  box-shadow: 16px 16px 13px 5px rgba(34, 60, 80, 0.2);
   z-index: 2;
 }
 
@@ -74,59 +72,60 @@
 
 @media screen and (max-width: 563px) {
   .content {
-      height: 651px;
+      height: 588px;
       width: 414px;
       padding: 35px;
   }
 
   .flowersTopImage {
-      height: 651px;
+      height: 588px;
       width: 414px;
   }
 
   .text {
     margin-top: 20px;
-    font-size: 21px;
-    grid-template-columns: 130px 39px 1fr;
+    font-size: 20px;
+    grid-template-columns: 121px 39px 1fr;
   }
 
   .title{
-    margin-top: 47px;
-    font-size: 45px;
+    margin-top: 30px;
+    font-size: 30px;
   }
 
   .additionalText{
     margin-top: 20px;
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 414px) {
 
   .content {
-    height: 587px;
+    height: 497px;
     width: 350px;
     padding: 25px;
   }
 
   .flowersTopImage {
-    height: 587px;
+    height: 497px;
     width: 350px;
   }
 
   .text {
-    margin-top: 20px;
-    font-size: 18px;
-    grid-template-columns: 113px 34px 1fr;
+    margin-top: 18px;
+    font-size: 16px;
+    grid-template-columns: 109px 34px 1fr;
   }
 
   .title{
-    margin-top: 47px;
-    font-size: 42px;
+    margin-top: 27px;
+    font-size: 27px;
   }
 
   .additionalText{
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 18px;
+    margin-left: 10px;
   }
 }

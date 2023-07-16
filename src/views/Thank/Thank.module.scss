@@ -36,39 +36,58 @@
 }
 
 .textA {
-  color: #5b5b5b;
+  color: #ffffff;
   font-size: 142px;
   position: absolute;
   top: 38%;
   left: 38%;
+  @media screen and (max-width: 414px) {
+    font-size: 120px;
+    top: 37%;
+    left: 35%;  }
 }
 
 .textAnd {
   opacity: 0.2;
-  color: #5b5b5b;
+  color: #ffffff;
   position: absolute;
   font-size: 367px;
   top: 26%;
   left: 36%;
+  @media screen and (max-width: 563px) {
+    top: 18%;
+    left: 33%;
+    font-size: 348px;
+  }
+  @media screen and (max-width: 414px) {
+    font-size: 300px;
+    top: 18%;
+    left: 32%;
+  }
 }
 
 .textC {
-  color: #5b5b5b;
+  color: #ffffff;
   font-size: 150px;
   position: absolute;
   top: 50%;
   left: 52%;
+  @media screen and (max-width: 414px) {
+    font-size: 145px;
+    top: 47%;
+    left: 50%;
+  }
 }
 
 @media screen and (max-width: 563px) {
   .content {
-    height: 651px;
+    height: 588px;
     width: 414px;
     padding: 35px;
   }
 
   .flowersLeftImage {
-    height: 651px;
+    height: 588px;
     width: 414px;
   }
 
@@ -76,16 +95,14 @@
 
 @media screen and (max-width: 414px) {
   .content {
-    height: 587px;
+    height: 497px;
     width: 350px;
     padding: 25px;
   }
 
   .flowersLeftImage {
-    height: 587px;
+    height: 497px;
     width: 350px;
   }
-
-
 }
 
