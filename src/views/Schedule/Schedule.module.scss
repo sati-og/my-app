@@ -38,68 +38,95 @@
   width: 100%;
 }
 
-.text {
-  margin-top: 29px;
-  font-size: 25px;
-  color: #5b5b5b;
+.grid {
   display: grid;
-  grid-template-columns: 150px 68px 1fr;
-  gap: 10px;
-  text-align: left;
+  grid-template-columns: auto auto 1fr;
+  gap: 20px 20px;
+  margin-top: 29px;
 }
 
-.additionalText{
+.link {
+  color: unset;
+}
+
+.text {
+  display: contents;
+  font-size: 25px;
+  color: #5b5b5b;
+  text-align: left;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.additionalText {
   margin-top: 29px;
   font-size: 25px;
   color: #5b5b5b;
   text-align: end;
 }
 
-.title{
+.title {
   margin-top: 60px;
   font-size: 50px;
   color: #5b5b5b;
 }
 
+.place {
+  text-align: justify;
+}
+
 .address {
-  text-align: right;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.placeName {
+  margin-left: 27px;
 }
 
 .time {
   text-align: center;
 }
 
-
 @media screen and (max-width: 563px) {
+  .grid {
+    gap: 20px 15px;
+  }
+
   .content {
-      height: 588px;
-      width: 414px;
-      padding: 35px;
+    height: 588px;
+    width: 414px;
+    padding: 35px;
   }
 
   .flowersTopImage {
-      height: 588px;
-      width: 414px;
+    height: 588px;
+    width: 414px;
   }
 
   .text {
-    margin-top: 20px;
-    font-size: 20px;
-    grid-template-columns: 121px 39px 1fr;
+    font-size: 18px
   }
 
-  .title{
+  .title {
     margin-top: 30px;
     font-size: 30px;
   }
 
-  .additionalText{
+  .additionalText {
     margin-top: 20px;
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 414px) {
+  .grid {
+    gap: 15px 9px;
+  }
 
   .content {
     height: 497px;
@@ -113,17 +140,15 @@
   }
 
   .text {
-    margin-top: 18px;
     font-size: 16px;
-    grid-template-columns: 109px 34px 1fr;
   }
 
-  .title{
+  .title {
     margin-top: 27px;
     font-size: 27px;
   }
 
-  .additionalText{
+  .additionalText {
     margin-top: 25px;
     font-size: 18px;
     margin-left: 10px;
