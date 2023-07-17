@@ -46,13 +46,15 @@
 }
 
 .loaderBackdrop {
-  position: absolute;
+  overscroll-behavior: contain;
+  pointer-events: none;
+  position: fixed;
   inset: 0;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
   animation: 1s cubic-bezier(0.53, 0, 0.72, 0.72) 8s 1 forwards hideBackdrop;
 }
 

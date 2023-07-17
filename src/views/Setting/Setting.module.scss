@@ -1,37 +1,4 @@
-.container {
-  position: relative;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Marck Script', cursive;;
-  font-size: 50px;
-  background-image: linear-gradient(to top left in oklab, hsl(33 23% 58%) 0%, hsl(33 23% 66% / 61%) 100%);
-}
 
-.content {
-  position: relative;
-  padding: 50px 50px 20px 50px;
-  background-size: cover;
-  height: 800px;
-  width: 563px;
-  background-color: #ffffff;
-  box-shadow: 16px 16px 13px 5px rgba(34, 60, 80, 0.2);
-  overflow: hidden;
-  z-index: 2;
-
-  @media screen and (max-width: 563px) {
-    height: 588px;
-    width: 414px;
-    padding: 35px;
-  }
-
-  @media screen and (max-width: 414px) {
-    height: 497px;
-    width: 350px;
-    padding: 25px;
-  }
-}
 
 .flowersTopImage {
   position: absolute;
@@ -51,15 +18,6 @@
     height: 497px;
 
   }
-}
-
-.shadowOverlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
 }
 
 .invitationContent {

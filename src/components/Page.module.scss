@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Marck Script', cursive;;
+  font-size: 50px;
+}
+
+.content {
+  position: relative;
+  padding: 50px 50px 20px 50px;
+  margin: 50px;
+  background-size: cover;
+  height: 800px;
+  width: 563px;
+  background-color: #ffffff;
+  box-shadow: 16px 16px 13px 5px rgba(34, 60, 80, 0.2);
+  overflow: hidden;
+  z-index: 2;
+
+  @media screen and (max-width: 563px) {
+    height: 588px;
+    width: 414px;
+    padding: 35px;
+  }
+
+  @media screen and (max-width: 414px) {
+    height: 497px;
+    width: 350px;
+    padding: 25px;
+  }
+}

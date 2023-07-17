@@ -1,0 +1,11 @@
+.shadowOverlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-image: linear-gradient(to top left in oklab, hsl(33 23% 58%) 0%, hsl(33 23% 66% / 61%) 100%);
+
+}
