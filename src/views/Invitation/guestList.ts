@@ -3,9 +3,10 @@ export type NameType = {
 }
 
 export const guestList: NameType[]= [
-  {id: 'guest', nameStr: 'Дорогой гость', type: 'singleName'},
+  {id: 'guest', nameStr: 'Дорогой гость', type: 'custom'},
   {id: 'guests', nameStr: 'гости', type: 'name'},
   {id: 'parents', nameStr: 'папа и мама', type: 'name'},
+  {id: 'tanya', nameStr: 'Дорогая Таня', type: 'singleName'},
   {id: 'mkartychev-kh', nameStr: 'Мкартычева Хачатура', type: 'family'},
   {id: 'mkartychev-v', nameStr: 'Мкартычева Виталия', type: 'family'},
   {id: 'arutyunov-oa', nameStr: 'Арутюнова Ованеса', type: 'family'},
