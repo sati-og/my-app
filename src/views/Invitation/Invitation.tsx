@@ -2,6 +2,7 @@ import s from './Invitation.module.scss';
 import { guestList } from "./guestList";
 import { declOfNum } from "../../utils";
 import { useParams } from "react-router-dom";
+import {useMemo} from "react";
 import { Page } from "../../components/Page";
 
 const setName = (nameId: string): string => {
@@ -25,6 +26,10 @@ export const Invitation = () => {
 
   const {id} = useParams<{ id: string }>();
 
+  const userType = useMemo(()=>{
+   return  guestList.find(el=> el.id === id)?.type || 'name'
+  }, [id, guestList])
+
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const firstDate = new Date(2023, 7, 12).getTime();
   const secondDate = new Date().getTime();
@@ -39,9 +44,9 @@ export const Invitation = () => {
           <span>{setName(id || 'guest')}</span>
         </div>
         <div className={s.text}>
-          <span>Мы будем очень рады видеть вас на долгожданном торжестве, посвященном дню рождения нашей семьи.</span>
+          <span>Мы будем очень рады видеть {userType==='singleName' ? 'тебя' : 'вас'} на долгожданном торжестве, посвященном дню рождения нашей семьи.</span>
           <span
-            className={s.secondText}>Приглашаем вас разделить с нами радость особенного дня — дня нашей свадьбы.</span>
+            className={s.secondText}>Приглашаем {userType==='singleName' ? 'тебя' : 'вас'} разделить с нами радость особенного дня — дня нашей свадьбы.</span>
         </div>
         <div className={s.dateText}>
           12 августа 2023
