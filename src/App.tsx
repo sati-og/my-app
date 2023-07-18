@@ -14,7 +14,7 @@ import './App.css';
 function App() {
 
   return (
-    <div className="App">
+    <div className={s.App}>
       <HeartLoader />
       <ShadowOverlay />
       <div key='index' className={s.section}>
