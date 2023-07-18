@@ -7,6 +7,7 @@ export const guestList: NameType[]= [
   {id: 'guests', nameStr: 'гости', type: 'name'},
   {id: 'parents', nameStr: 'папа и мама', type: 'name'},
   {id: 'tanya', nameStr: 'Дорогая Таня', type: 'singleName'},
+  {id: 'ardush', nameStr: 'Дорогой Ардуш', type: 'singleName'},
   {id: 'mkartychev-kh', nameStr: 'Мкартычева Хачатура', type: 'family'},
   {id: 'mkartychev-v', nameStr: 'Мкартычева Виталия', type: 'family'},
   {id: 'arutyunov-oa', nameStr: 'Арутюнова Ованеса', type: 'family'},
