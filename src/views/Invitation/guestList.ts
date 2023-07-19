@@ -3,7 +3,7 @@ export type NameType = {
 }
 
 export const guestList: NameType[]= [
-  {id: 'guest', nameStr: 'Дорогой гость', type: 'custom'},
+  {id: 'guest', nameStr: 'Дорогой гость', type: 'singleName'},
   {id: 'guests', nameStr: 'гости', type: 'name'},
   {id: 'parents', nameStr: 'папа и мама', type: 'name'},
   {id: 'tanya', nameStr: 'Дорогая Таня', type: 'singleName'},
@@ -32,7 +32,9 @@ export const guestList: NameType[]= [
   {id: 'grigoryan', nameStr: 'Григоряна Арменака', type: 'family'},
   {id: 'arzumanyan', nameStr: 'Арзуманян Армен и Светлана', type: 'name'},
   {id: 'mnatsakanyan', nameStr: 'Сергей, Лилия, Альберт и Армине', type: 'name'},
+  {id: 'armine', nameStr: 'Дорогая Армине', type: 'singleName'},
   {id: 'laura-rudolf', nameStr: 'Лаура, Рудольф, Кристина, Артур и Дарина', type: 'name'},
+  {id: 'kristina', nameStr: 'Дорогая Кристина', type: 'singleName'},
   {id: 'arzumanyan-l', nameStr: 'Лиана и Арина', type: 'name'},
   {id: 'tonoyan-s', nameStr: 'Дорогая Тоноян Сусана', type: 'custom'},
   {id: 'tonoyan-a', nameStr: 'Аркадий, Ася, Александр и Лев', type: 'name'},
@@ -75,6 +77,6 @@ export const guestList: NameType[]= [
   {id: 'artem-liza', nameStr: 'Артём и Лиза', type: 'name'},
   {id: 'eskerovy', nameStr: 'Дядя Назим, тётя Чинара и Саида', type: 'name'},
   {id: 'nechaevy', nameStr: 'Дядя Юра и тётя Люба', type: 'name'},
-  {id: 'gevorkyan-a', nameStr: 'Семья Геворкян Анны', type: 'family'},
-  {id: 'gevorkyan-n', nameStr: 'Семья Геворкяна Николая', type: 'family'},
+  {id: 'gevorkyan-a', nameStr: 'Геворкян Анны', type: 'family'},
+  {id: 'gevorkyan-n', nameStr: 'Геворкяна Николая', type: 'family'},
 ]
